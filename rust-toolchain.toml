@@ -1,0 +1,6 @@
+# Pinned for reproducible release builds.
+[toolchain]
+channel = "1.99.0"
+targets = ["aarch64-apple-ios", "aarch64-linux-android"]
+profile = "minimal"
+components = ["rustfmt", "clippy"]

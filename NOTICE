@@ -1,0 +1,32 @@
+Multiplayer Mobile includes or is derived from the following third-party work.
+
+node-steam-user (MIT), https://github.com/DoctorMcKay/node-steam-user
+  The auth session ticket layout, ClientAuthList activation and app ownership
+  ticket caching in bridge/src/ticket.rs and bridge/src/session.rs are ported
+  from components/appauth.js.
+  Copyright (c) 2015 Alex Corn
+
+steam-appticket (MIT), https://github.com/DoctorMcKay/node-steam-appticket
+  The app ownership ticket field offsets in bridge/src/ticket.rs follow
+  components/parseAppTicket.js.
+  Copyright (c) 2018 Alex Corn
+
+node-steam-session (MIT), https://github.com/DoctorMcKay/node-steam-session
+  The SteamClient-platform device details and the use of the CM socket for
+  IAuthenticationService follow its WebSocketCMTransport/AuthenticationClient.
+  Copyright (c) 2022 Alex Corn
+
+steam-vent (MIT), https://codeberg.org/steam-vent/steam-vent
+  Vendored in vendor/steam-vent with one change (see vendor/PATCHES.md).
+  Robin Appelman and steam-vent contributors
+
+OpenSSL (Apache License 2.0), https://www.openssl.org/
+  The iOS/Android libssl/libcrypto release artifacts are built from the
+  unmodified OpenSSL source by openssl/build-*.sh. Its license ships next to
+  them as LICENSE-OpenSSL.txt.
+
+luaqrcode (BSD 3-clause), https://github.com/speedata/luaqrcode
+  Vendored unmodified in mod/lib/qrencode, with its license.
+  Copyright (c) 2012-2020, Patrick Gundlach and contributors
+
+No code from SteamKit2 (LGPL) is used.

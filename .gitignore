@@ -1,0 +1,9 @@
+/target/
+/dist/
+/openssl/.cache/
+/openssl/build/
+.env
+*.env
+.secrets/
+.DS_Store
+!openssl/version.env

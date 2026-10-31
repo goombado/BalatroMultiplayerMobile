@@ -1,0 +1,3 @@
+# One deployment target for Rust and the C code built by aws-lc-sys, so the link agrees.
+[env]
+IPHONEOS_DEPLOYMENT_TARGET = "14.0"

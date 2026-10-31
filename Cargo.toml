@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = ["bridge", "bridge-cli"]
+exclude = ["vendor"]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+version = "0.1.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
+strip = true
+panic = "abort"
+
+[patch.crates-io]
+steam-vent = { path = "vendor/steam-vent" }
