@@ -1,0 +1,11 @@
+[package]
+name = "bridge-cli"
+description = "Desktop harness for bmp-steam-bridge: drives the same C ABI the game uses"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+bmp-steam-bridge = { path = "../bridge" }
+qrcode = { version = "0.14", default-features = false }
